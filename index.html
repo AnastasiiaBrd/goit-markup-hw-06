@@ -70,7 +70,7 @@
       <!--Особенности-->
       <section class="section">
         <div class="container features-container">
-          <h2 hidden>Преимущества компании</h2>
+          <h2 class="visually-hidden">Преимущества компании</h2>
           <ul class="features-list list">
             <li class="features-item">
               <div class="features-icon">
@@ -455,6 +455,23 @@
             </li>
           </ul>
         </div>
+        <div class="form-box">
+          <h3 class="social-title">Подпишитесь на рассылку</h3>
+          <form class="form-box-mail">
+            <label class="footer-form-label">
+              <input
+                type="email"
+                name="user-email"
+                placeholder="E-mail"
+                class="footer-form-input"
+              />
+            </label>
+          <button class="modal-btn" type="submit">Подписаться
+            <svg class="form-icon">
+              <use href="./images/icons.svg#icon-send"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </footer>
 
@@ -507,16 +524,16 @@
           <label>
             <input
               type="checkbox"
-              class="modal-form-checkbox"
+              class="modal-form-checkbox visually-hidden"
               name="policy"
               id="policy"
             />
             <label for="policy" class="modal-form-checkbox-label"
-              >Соглашаюсь с рассылкой и принимаю
+              >Соглашаюсь с рассылкой и принимаю&nbsp;
               <a href="#" class="modal-form-link">Условия договора</a></label
             >
           </label>
-          <button type="submit">Отправить</button>
+          <button class="modal-btn" type="submit">Отправить</button>
         </form>
       </div>
     </div>
